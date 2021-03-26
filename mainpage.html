@@ -1,27 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
-  </body>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body style="color:currentColor;">
+        <h1 class="display-3 head1color">
+            Welcome to Chen's homepage
+        </h1>
+        <h3>
+            About me
+        </h3>
+        <p class="h6 p1">
+            I came from China and was born in Zhejiang Ningbo.
+            In 2014, I graduated from undergrad school in Shanghai and came to the US.
+            I went to Bentley to get my MSA and graduated in 2016.
+            My first job out of school is an auditor in PwC. After three years, I left PwC and joined EY.
+            At EY, I'm in Transaction Advisory Services team.
+        </p>
+        <p class="h6 p1">
+            However, after being in Accounting for 4 years, I never found myself satisfied. The WLB isn't good in big 4. And if I go to industry, the career potential isn't good, also the job would be boring. So overall, I realized that what this career gave me does not satisfy my lifestyle need.
+            I like skiing, traveling and poker. Click <mark>Hobbies</mark> for more.
+            I want to be able to work from anywhere in the world, or at least anywhere from the US.
+            I want to have enough time to enjoy my life.
+            I also want to have spend more time with my family, friend and my <mark>Furiend</mark>.
+        </p>
+        <p class="h6 p1">
+            After some research, I found software engineer is a job that would satisfy my lifestyle -- and pays well:)
+            So here I am, on my new journey to this new <mark>career</mark> that will give me more flexibility and more potential.
+        </p>
+        <h4>
+            Hobbies
+        </h4>
+        <a class="h6" href="hobbies.html">
+            Click here to know more about my hobbies
+        </a>
+        <h4>
+            Career
+        </h4>
+        <a class="h6" href="career.html">
+            Click here to know more about my career
+        </a>
+        <h4>
+            Furiend
+        </h4>
+        <a class="h6" href="furiend.html">
+            Click here to know more about my Furiend
+        </a>
+        <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width:400px;">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Your message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" style="width:400px;"></textarea>
+              </div>
+              <button onclick="confirmSubmit()" type="submit" class="btn btn-primary" id="submitButton">Contact me</button>
+            <small class="form-text text-muted">
+                I'm looking forward to connecting with you.
+            </small>
+            <small id="txforcontact" class="form-text text-muted"></small>
+        </form>
+    </body>
+    <script src="myjs.js"></script>
 </html>
